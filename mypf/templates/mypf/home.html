@@ -7,22 +7,22 @@
                 <!--Custom Api form-->
                 <form method="POST" class="form-inline">
                     {% csrf_token %}
-                    <label class="my-1 mr-2" for="name">Name</label>
-                    <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="name" placeholder="Jane Doe">
+                    <label class="my-1 mr-2" for="name">Nombre</label>
+                    <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="name" placeholder="Escriba un nombre">
 
-                    <label class="my-1 mr-2" for="gender">Gender</label>
+                    <label class="my-1 mr-2" for="gender">Genero</label>
                     <select name="gender" class="custom-select mb-2 mr-sm-2" id="gender">
-                        <option selected>Select</option>
-                        <option value="m">Male</option>
-                        <option value="f">Female</option>
+                        <option selected>Seleccionar</option>
+                        <option value="m">Hombre</option>
+                        <option value="f">Mujer</option>
                     </select>
-                    <button type="button" class="btn btn-primary mb-2 btn-sub">Generate Your</button>
+                    <button type="button" class="btn btn-primary mb-2 btn-sub">Genera tu imagen</button>
                 </form>
             </div>
         </div>
         <div class="row justify-content-center margin">
             <div class="pflink">
-                <a href="{% url 'portfolio' %}">Check Portfolio</a>
+                <a href="{% url 'portfolio' %}">Ver Portafolio</a>
             </div>
         </div>
         <div class="row justify-content-center margin">
